@@ -1,0 +1,71 @@
+header .contan{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header .menu {
+  padding: 0 30px;
+  font-size: 40px;
+  display: block;
+}
+header .contan .icon {
+  display: none;
+}
+header .contan nav {
+  position: absolute;
+  right: -100%;
+  padding: 50px 0;
+  top: 100px;
+  width: 60%;
+  transition: all 0.6s linear;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header nav a {
+  display: flex;
+  padding: 10px 0;
+  margin: 15px;
+  font-size: 1.5rem;
+  transition: all 0.3s linear;
+  width: 90%;
+  background-color: rgba(70, 22, 22, 0.3);
+}
+header .menu:hover + nav{
+  display: flex;
+  right: 0;
+  flex-direction: column;
+}
+header .span {
+display: flex;
+position: absolute;
+right: 0;
+top: -20px;
+width:100px;
+height: 100px;
+}
+header .span span{
+  position: absolute;
+  width: 25px;
+  height: 5px;
+  top: 50%;
+  right: 50%;
+  background-color: black;
+  transition: all 0.8 linear;
+}
+header .contan nav a.active {
+  transform: scale(1);
+}
+.span span:first-child{
+transform: rotate(135deg);
+}
+.span span:last-child{
+transform: rotate(45deg);
+}
+.span:hover span:first-child{
+transform: rotate(180deg);
+}
+.span:hover span:last-child{
+transform: rotate(90deg);
+}
+.Interior .text{
+  max-width: 45%;
+  }
